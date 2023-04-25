@@ -4,19 +4,24 @@
     box-sizing: border-box;
 }
 .game-board{
-    width: 70%;
-    height: 100vh;
+    width: 80%;
+    height: 80vh;
     margin: auto;
     background-color: bisque;
+    margin-top: 2rem;
+    border-radius: 1rem;
     position: relative;
     overflow: hidden;
+    border-bottom: 2rem solid green;
+    background: linear-gradient(#87CEEB, #E0F6FF) ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.179);
 }
 #pipe{
     width: 4rem;
     position: absolute;
     bottom: 0;
     right: -3rem;
-    animation: pipe-animation 1.9s infinite linear;
+    animation: pipe-animation 2s infinite linear;
 }
 @keyframes pipe-animation {
     from{
@@ -27,7 +32,7 @@
     }
 }
 #mario{
-    width: 11rem;
+    width: 10rem;
     position: absolute;
     bottom: 0px;
 }
@@ -50,4 +55,36 @@
     100%{
         bottom: -1px;
     }
+}
+#clouds{
+    width: 40rem;
+    position: absolute;
+   top: 10%;
+    animation: clouds-animation 10s  infinite linear;
+}
+
+
+@keyframes clouds-animation {
+    from{
+        right: -40rem;
+    }
+    to{
+        right: 100%;
+    }
+}
+#score-contain{
+    position: absolute;
+    left: 45%;
+    bottom: 60%;
+    width: 5rem;
+ 
+    background-color: green;
+}
+#text-start{
+    position: absolute;
+    z-index: 2;
+    bottom: 17%;
+   left: 45%;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: blue;
 }
