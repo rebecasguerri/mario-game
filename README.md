@@ -4,8 +4,6 @@ Status: **Finalizado 😃**
  ### Descrição do Projeto
    Este projeto é um jogo web do mario que utiliza Eventos javascript, DOM, metodos e propriedades javascript, 
    
- ### Autores
-- [@RebecaFreitass](https://github.com/RebecaFreitass)
 
  ### Tecnologias utilizadas
   HTML| CSS | JS
